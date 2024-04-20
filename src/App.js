@@ -4,6 +4,7 @@ import "./App.css";
 
 import Events from "./pages/Events/Events";
 import Clubs from "./pages/Clubs/Clubs";
+import Wing from "./pages/Clubs/Wing";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contactus/Contact";
 import Coreteam from "./pages/Coreteam/Coreteam";
@@ -21,6 +22,7 @@ function App() {
         <Route index path="home" element={<Home />} />
         <Route path="events" element={<Events />} />
         <Route path="wings" element={<Clubs />} />
+        <Route path="wings/:wingName" element={<Wing />} />
         <Route path="contactus" element={<Contact />} />
         <Route path="core" element={<Coreteam />} />
         <Route path="gallery" element={<Gallery />} />
