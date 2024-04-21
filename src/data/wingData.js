@@ -14,7 +14,7 @@ export const wingData = {
                 designation: "Wing Lead",
                 socials: {
                     insta: "#",
-                    fb: "#",
+                    github: "#",
                     linkedin: "#",
                 }
             },
@@ -23,7 +23,7 @@ export const wingData = {
                 designation: "Wing coordinator",
                 socials: {
                     insta: "#",
-                    fb: "#",
+                    github: "#",
                     linkedin: "#",
                 }
             },
@@ -32,7 +32,7 @@ export const wingData = {
                 designation: "Wing coordinator",
                 socials: {
                     insta: "#",
-                    fb: "#",
+                    github: "#",
                     linkedin: "#",
                 }
             },
@@ -55,7 +55,7 @@ export const wingData = {
                 designation: "Wing Lead",
                 socials: {
                     insta: "#",
-                    fb: "#",
+                    github: "#",
                     linkedin: "#",
                 }
             },
@@ -64,7 +64,7 @@ export const wingData = {
                 designation: "Wing coordinator",
                 socials: {
                     insta: "#",
-                    fb: "#",
+                    github: "#",
                     linkedin: "#",
                 }
             },
@@ -73,7 +73,16 @@ export const wingData = {
                 designation: "Wing coordinator",
                 socials: {
                     insta: "#",
-                    fb: "#",
+                    github: "#",
+                    linkedin: "#",
+                }
+            },
+            {
+                name: "soham das",
+                designation: "Wing coordinator",
+                socials: {
+                    insta: "#",
+                    github: "#",
                     linkedin: "#",
                 }
             },

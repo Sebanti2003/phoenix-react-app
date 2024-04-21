@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
 function ZigBox({ title, description, data, handleNavigation }) {
-  const navigate = useNavigate()
 
   return (
     <div className="flex flex-col w-full items-center justify-center">
