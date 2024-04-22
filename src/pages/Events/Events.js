@@ -6,7 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 import img1 from "../../static/img/avenir.jpeg";
 import img2 from "../../static/img/brainstormer.jpeg";
 import img3 from "../../static/img/aavahan.jpeg";
-import { getDocs, collection,query,orderBy } from "firebase/firestore";
+import { getDocs, collection, query, orderBy } from "firebase/firestore";
 import moment from "moment/moment";
 
 const responsive = {
@@ -111,7 +111,7 @@ function Events() {
         </div>
       </div>
       <ZigBox data={mainEvents} />
-      <div className="flex p-4 flex-col justify-center items-center bg-[#bde0fe]">
+      {/* <div className="flex p-4 flex-col justify-center items-center bg-[#bde0fe]">
         <h2 className="mt-5 text-[1.5rem] md:text-[2rem] font-[800]">
           Upcoming events
         </h2>
@@ -158,9 +158,9 @@ function Events() {
             })}
           </Carousel>
         </div>
-      </div>
+      </div> */}
       <div className="flex flex-col justify-center items-center">
-        <h2 className="mt-[90px] mb-4 text-[1.5rem] md:text-[2rem] font-[800]">
+        <h2 className="mt-[90px] mb-4 text-[1.5rem] md:text-[2rem] font-[800] p-4 w-full text-center bg-[#bde0fe]">
           Other events
         </h2>
         <ZigBox data={eventList} />
@@ -170,3 +170,4 @@ function Events() {
 }
 
 export default Events;
+
