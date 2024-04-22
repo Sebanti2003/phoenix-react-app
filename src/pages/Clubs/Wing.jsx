@@ -10,7 +10,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 const Wing = () => {
     const location = useLocation()
 
-    const { name, aboutExtended, members, gallery } = location.state;
+    const { name, aboutExtended, coverImage, members, gallery } = location.state;
 
     return (
         <div>
@@ -20,7 +20,16 @@ const Wing = () => {
                 </div>
             </div>
 
-            <div className="wing-body px-10 md:px-72">
+            {/* cover image */}
+            <div className='mt-4 md:px-60'>
+                <div
+                    className="w-full h-56 relative group overflow-hidden flex rounded-lg"
+                > <img src={coverImage} alt="img" className="absolute w-full h-full inset-0 object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                </div>
+            </div>
+
+            <div className="wing-body px-10 md:px-60">
                 {/* about */}
                 <div className='about py-8'>
                     <h2 className='text-2xl md:text-3xl font-extrabold mb-4'>About</h2>
@@ -30,15 +39,19 @@ const Wing = () => {
                 {/* wing members */}
                 <div className='wing-members py-8'>
                     <h2 className='text-2xl md:text-3xl font-extrabold mb-4'>Wing Members</h2>
-                    <div className='wing-lead flex justify-center'>
+
+                    {/* ---for hierarchy --- */}
+                    {/* <div className='wing-lead flex justify-center'>
                         <MemberCard
                             name={members[0].name}
                             designation={members[0].designation}
                             socials={members[0].socials}
                         />
-                    </div>
-                    <div className='flex gap-4 flex-wrap justify-between'>
-                        {members.slice(1).map((item, index) => {
+                    </div> */}
+                    {/* --- hierarchy --- */}
+
+                    <div className='flex gap-6 flex-wrap justify-center'>
+                        {members.slice(0).map((item, index) => {
                             return (<>
                                 <MemberCard
                                     key={index}
@@ -68,7 +81,7 @@ const MemberCard = ({ name, designation, socials }) => {
         <style>
             {`
             .our-team {
-            padding: 20px 0 55px;
+            padding: 30px 0 60px;
             margin-bottom: 20px;
             background-color: #f7f5ec;
             text-align: center;
@@ -78,9 +91,9 @@ const MemberCard = ({ name, designation, socials }) => {
 
             .our-team .picture {
             display: inline-block;
-            height: 130px;
-            width: 130px;
-            margin-bottom: 20px;
+            height: 150px;
+            width: 150px;
+            margin-bottom: 30px;
             z-index: 1;
             position: relative;
             }
@@ -132,6 +145,7 @@ const MemberCard = ({ name, designation, socials }) => {
             .our-team .social {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 1rem;
             width: 100%;
             background-color: #1369ce;
@@ -161,7 +175,7 @@ const MemberCard = ({ name, designation, socials }) => {
         `}
         </style>
 
-        <div className="our-team rounded-xl w-full md:w-[15rem] flex-shrink-0 border-t-2 border-l-2 border-t-sky-300 border-l-sky-300 shadow-lg shadow-blue-300">
+        <div className="our-team rounded-lg w-[15rem] flex-shrink-0 border-t-2 border-l-2 border-t-sky-300 border-l-sky-300 shadow-lg shadow-blue-300">
             <div className="picture">
                 <img className="img-fluid" alt='img' src="https://picsum.photos/130/130?image=1027" />
             </div>
@@ -170,9 +184,9 @@ const MemberCard = ({ name, designation, socials }) => {
                 <h4 className="title text-[#4e5052]">{designation}</h4>
             </div>
             <ul className="social">
-                <li ><a href={socials.insta} aria-hidden="true"><AiFillInstagram height={"100%"} /></a></li>
-                <li><a href={socials.github} aria-hidden="true"><FaGithub /></a></li>
-                <li><a href={socials.linkedin} aria-hidden="true"><FaLinkedinIn /></a></li>
+                <li ><a href={socials.insta} aria-hidden="true"><AiFillInstagram size={"1.2rem"} /></a></li>
+                <li><a href={socials.github} aria-hidden="true"><FaGithub size={"1.2rem"} /></a></li>
+                <li><a href={socials.linkedin} aria-hidden="true"><FaLinkedinIn size={"1.2rem"} /></a></li>
             </ul>
         </div>
     </>)
