@@ -51,11 +51,11 @@ const GridCard = ({ image, mb, grow }) => {
     console.log(image);
     return (
         <>
-            <a href="ve" className={`group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 ${mb ? "mb-4" : ""} ${grow ? "flex-grow" : ""}`}>
+            <div className={`group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 ${mb ? "mb-4" : ""} ${grow ? "flex-grow" : ""}`}>
                 <img src={image.url} alt="img" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                 <h5 className="z-10 text-lg font-medium text-white absolute bottom-0 left-0 p-2 md:text-xl">{image.caption}</h5>
-            </a>
+            </div>
         </>
     )
 }
