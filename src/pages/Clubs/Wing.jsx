@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from 'react-router-dom';
-import { Gallery } from "../../components/Gallery";
+import { GalleryGrid } from "../../components/GalleryGrid";
 
 //icons
 import { AiFillInstagram } from "react-icons/ai";
@@ -20,7 +20,7 @@ const Wing = () => {
                 </div>
             </div>
 
-            <div className="wing-body px-10 md:px-52">
+            <div className="wing-body px-10 md:px-72">
                 {/* about */}
                 <div className='about py-8'>
                     <h2 className='text-2xl md:text-3xl font-extrabold mb-4'>About</h2>
@@ -37,7 +37,7 @@ const Wing = () => {
                             socials={members[0].socials}
                         />
                     </div>
-                    <div className='flex gap-4 flex-wrap justify-evenly'>
+                    <div className='flex gap-4 flex-wrap justify-between'>
                         {members.slice(1).map((item, index) => {
                             return (<>
                                 <MemberCard
@@ -54,9 +54,7 @@ const Wing = () => {
                 {/* gallery */}
                 <div className='gallery py-8'>
                     <h2 className='text-3xl font-extrabold mb-4'>Gallery</h2>
-                    <div>
-                        <Gallery data={gallery} />
-                    </div>
+                    <GalleryGrid data={gallery} />
                 </div>
             </div>
         </div>
