@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react";
 import { useLocation } from 'react-router-dom';
+import { Gallery } from "../../components/Gallery";
 
 //icons
 import { AiFillInstagram } from "react-icons/ai";
@@ -19,46 +20,58 @@ const Wing = () => {
                 </div>
             </div>
 
-            {/* about */}
-            <div className='about px-10 md:px-32 py-8'>
-                <h2 className='text-3xl font-extrabold mb-4'>About</h2>
-                <p>{aboutExtended}</p>
-            </div>
-
-            {/* wing members */}
-            <div className='wing-members px-10 md:px-32 py-8'>
-                <h2 className='text-3xl font-extrabold mb-4'>Wing Members</h2>
-                <div className='wing-lead flex justify-center'>
-                    <MemberCard
-                        name={members[0].name}
-                        designation={members[0].designation}
-                        socials={members[0].socials}
-                    />
+            <div className="wing-body px-10 md:px-52">
+                {/* about */}
+                <div className='about py-8'>
+                    <h2 className='text-2xl md:text-3xl font-extrabold mb-4'>About</h2>
+                    <p>{aboutExtended}</p>
                 </div>
-                <div className='flex gap-4 flex-wrap justify-evenly'>
-                    {members.slice(1).map((item, index) => {
-                        return (<>
-                            <MemberCard
-                                key={index}
-                                name={item.name}
-                                designation={item.designation}
-                                socials={item.socials}
-                            />
-                        </>)
-                    })}
+
+                {/* wing members */}
+                <div className='wing-members py-8'>
+                    <h2 className='text-2xl md:text-3xl font-extrabold mb-4'>Wing Members</h2>
+                    <div className='wing-lead flex justify-center'>
+                        <MemberCard
+                            name={members[0].name}
+                            designation={members[0].designation}
+                            socials={members[0].socials}
+                        />
+                    </div>
+                    <div className='flex gap-4 flex-wrap justify-evenly'>
+                        {members.slice(1).map((item, index) => {
+                            return (<>
+                                <MemberCard
+                                    key={index}
+                                    name={item.name}
+                                    designation={item.designation}
+                                    socials={item.socials}
+                                />
+                            </>)
+                        })}
+                    </div>
+                </div>
+
+                {/* gallery */}
+                <div className='gallery py-8'>
+                    <h2 className='text-3xl font-extrabold mb-4'>Gallery</h2>
+                    <div>
+                        <Gallery data={gallery} />
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
 
+
+
 const MemberCard = ({ name, designation, socials }) => {
     return (<>
         <style>
             {`
             .our-team {
-            padding: 30px 0 55px;
-            margin-bottom: 30px;
+            padding: 20px 0 55px;
+            margin-bottom: 20px;
             background-color: #f7f5ec;
             text-align: center;
             overflow: hidden;
@@ -69,7 +82,7 @@ const MemberCard = ({ name, designation, socials }) => {
             display: inline-block;
             height: 130px;
             width: 130px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             z-index: 1;
             position: relative;
             }
@@ -121,10 +134,11 @@ const MemberCard = ({ name, designation, socials }) => {
             .our-team .social {
             display: flex;
             justify-content: center;
+            gap: 1rem;
             width: 100%;
             background-color: #1369ce;
             position: absolute;
-            bottom: -100px;
+            bottom: 0;
             left: 0;
             transition: all 0.5s ease 0s;
             }
@@ -136,7 +150,7 @@ const MemberCard = ({ name, designation, socials }) => {
             .our-team .social li a {
             display: block;
             padding: 10px;
-            font-size: 20px;
+            font-size: 17px;
             color: white;
             transition: all 0.3s ease 0s;
             text-decoration: none;
@@ -149,11 +163,11 @@ const MemberCard = ({ name, designation, socials }) => {
         `}
         </style>
 
-        <div className="our-team rounded-xl w-[17rem] flex-shrink-0">
+        <div className="our-team rounded-xl w-full md:w-[15rem] flex-shrink-0 border-t-2 border-l-2 border-t-sky-300 border-l-sky-300 shadow-lg shadow-blue-300">
             <div className="picture">
                 <img className="img-fluid" alt='img' src="https://picsum.photos/130/130?image=1027" />
             </div>
-            <div className="team-content flex flex-col gap-2">
+            <div className="team-content flex flex-col gap-1">
                 <h3 className="name text-2xl font-bold">{name}</h3>
                 <h4 className="title text-[#4e5052]">{designation}</h4>
             </div>

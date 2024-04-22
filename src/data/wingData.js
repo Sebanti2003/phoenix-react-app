@@ -1,7 +1,7 @@
-import img1 from '../static/img/RobotEvolution.jpg'
-import img2 from '../static/img/speaking-e1513074001193.jpeg'
-import img3 from '../static/img/cybernix.jpg'
-import img4 from '../static/img/civil.jpg'
+const img1 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const img2 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const img3 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const img4 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
 export const wingData = {
     cybernix: {
@@ -12,6 +12,7 @@ export const wingData = {
             {
                 name: "soham das",
                 designation: "Wing Lead",
+                profileImgUrl: "#",
                 socials: {
                     insta: "#",
                     github: "#",
@@ -21,6 +22,7 @@ export const wingData = {
             {
                 name: "soham das",
                 designation: "Wing coordinator",
+                profileImgUrl: "#",
                 socials: {
                     insta: "#",
                     github: "#",
@@ -30,6 +32,7 @@ export const wingData = {
             {
                 name: "soham das",
                 designation: "Wing coordinator",
+                profileImgUrl: "#",
                 socials: {
                     insta: "#",
                     github: "#",
@@ -39,10 +42,26 @@ export const wingData = {
         ],
 
         gallery: [
-            img1,
-            img2,
-            img3,
-            img4
+            {
+                url: img1,
+                caption: "caption"
+            },
+            {
+                url: img2,
+                caption: "caption"
+            },
+            {
+                url: img3,
+                caption: "caption"
+            },
+            {
+                url: img4,
+                caption: "caption"
+            },
+            {
+                url: img1,
+                caption: "caption"
+            },
         ]
     },
     robonix: {
@@ -53,6 +72,7 @@ export const wingData = {
             {
                 name: "soham das",
                 designation: "Wing Lead",
+                profileImgUrl: "#",
                 socials: {
                     insta: "#",
                     github: "#",
@@ -62,6 +82,7 @@ export const wingData = {
             {
                 name: "soham das",
                 designation: "Wing coordinator",
+                profileImgUrl: "#",
                 socials: {
                     insta: "#",
                     github: "#",
@@ -71,6 +92,7 @@ export const wingData = {
             {
                 name: "soham das",
                 designation: "Wing coordinator",
+                profileImgUrl: "#",
                 socials: {
                     insta: "#",
                     github: "#",
@@ -80,6 +102,7 @@ export const wingData = {
             {
                 name: "soham das",
                 designation: "Wing coordinator",
+                profileImgUrl: "#",
                 socials: {
                     insta: "#",
                     github: "#",
@@ -89,10 +112,38 @@ export const wingData = {
         ],
 
         gallery: [
-            img1,
-            img2,
-            img3,
-            img4
+            {
+                url: img1,
+                caption: "caption"
+            },
+            {
+                url: img2,
+                caption: "caption"
+            },
+            {
+                url: img3,
+                caption: "caption"
+            },
+            {
+                url: img4,
+                caption: "caption"
+            },
+            {
+                url: img1,
+                caption: "caption"
+            },
+            {
+                url: img1,
+                caption: "caption"
+            },
+            {
+                url: img1,
+                caption: "caption"
+            },
+            {
+                url: img1,
+                caption: "caption"
+            },
         ]
     }
 }
