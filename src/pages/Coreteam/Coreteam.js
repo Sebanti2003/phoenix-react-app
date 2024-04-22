@@ -25,10 +25,15 @@ function Coreteam() {
         ...doc.data(),
         id: doc.id,
       }));
-      
+
       let newFilteredData = filteredData.filter(
         (e) => parseInt(e.year.split("-")[0]) + 1 != d.getFullYear()
       );
+
+      newFilteredData.sort((a, b) => {
+        return parseInt(a.year.split("-")[0]) - parseInt(b.year.split("-")[0]);
+      });
+
       let lastYearData = newFilteredData.filter(
         (element) =>
           parseInt(element.year.split("-")[0]) + 2 === d.getFullYear()
@@ -37,7 +42,7 @@ function Coreteam() {
       setMemberList(newFilteredData);
       setActiveButton(lastYearData[0].year);
 
- 
+
     } catch (error) {
       console.error(error);
     }
@@ -65,7 +70,7 @@ function Coreteam() {
                   onClick={() => {
                     onButtonHandle(element.id, element.year);
                   }}
-                 
+
                   className={
                     element.year === activeButton
                       ? "  border-2 border-blue-700 bg-blue-700 focus:outline-0 text-white font-bold rounded-lg px-4 py-2 uppercase text-sm mt-5"
@@ -80,7 +85,7 @@ function Coreteam() {
           <div className=" px-4 grid md:grid-cols-2 sm:grid-cols-1 gap-x-5 w-45 mx-auto justify-center items-center">
             {yearList.map((element) => {
               return element.members.map((e, index) => {
-              
+
                 return (
                   <Cards
                     name={e.name}
