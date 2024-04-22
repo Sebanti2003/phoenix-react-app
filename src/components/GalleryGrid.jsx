@@ -1,6 +1,6 @@
-import React, { useMemo, useState } from 'react'
+import React, { useMemo } from 'react'
 
-export const Gallery = ({ data }) => {
+export const GalleryGrid = ({ data }) => {
 
 
     const arr = useMemo(() => {
@@ -16,15 +16,13 @@ export const Gallery = ({ data }) => {
     }, [data])
 
     return (
-        <section className="bg-white">
-            <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
-                    {arr.map((chunk, i) =>
-                        i % 2 === 0 ? <BentoGrid key={i} chunk={chunk} isReversed={false} /> : <BentoGrid key={i} chunk={chunk} isReversed={true} />
-                    )}
-                </div>
+        <div className="max-w-screen-xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+                {arr.map((chunk, i) =>
+                    i % 2 === 0 ? <BentoGrid key={i} chunk={chunk} isReversed={false} /> : <BentoGrid key={i} chunk={chunk} isReversed={true} />
+                )}
             </div>
-        </section>
+        </div>
     )
 }
 
@@ -56,7 +54,7 @@ const GridCard = ({ image, mb, grow }) => {
             <a href="ve" className={`group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 ${mb ? "mb-4" : ""} ${grow ? "flex-grow" : ""}`}>
                 <img src={image.url} alt="img" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" />
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">{image.caption}</h3>
+                <h5 className="z-10 text-lg font-medium text-white absolute bottom-0 left-0 p-2 md:text-xl">{image.caption}</h5>
             </a>
         </>
     )
