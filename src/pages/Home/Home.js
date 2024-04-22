@@ -237,7 +237,7 @@ function Home() {
             >
               <a href="https://avenir.phoenixnsec.in/" className="no-underline ">
                 {" "}
-                AVENIR '23
+                AVENIR '24
               </a>
             </Button>
 
