@@ -47,7 +47,18 @@ const data = [
       link: 'nirman'
     },
     isCLub: true
+  },
+  {
+    image: "",
+    title: 'Illustro',
+    description: 'Illustro is the official photography wing of Phoenix - The official Tech club of Netaji Subhash Engineering College. Capturing moments, creating memories. Explore, learn, and share your passion with Illustro. Join us to unleash your creativity through the lens.',
+    extraButton: {
+      name: 'Learn More',
+      link: 'illustro'
+    },
+    isCLub: true
   }
+
 ]
 
 
@@ -65,6 +76,15 @@ function Clubs() {
         break;
       case "robonix":
         setCurWing(wingData.robonix)
+        break;
+      case "nirman":
+        setCurWing(wingData.nirman)
+        break;
+      case "eloquense":
+        setCurWing(wingData.eloquense)
+        break;
+      case "illustro":
+        setCurWing(wingData.illustro)
         break;
 
       default:

@@ -7,13 +7,13 @@ import "./Home.css";
 import "./glitch.css"
 import { Button } from "@chakra-ui/react";
 import ZigBox from "../../components/ZigBox";
-import { useNavigate } from "react-router-dom";
+
 import { db } from "../../firebase-config";
 import { getDocs, collection } from "firebase/firestore";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CardHome from "../../components/CardHome";
-import PopOver from "../../components/PopOver";
+
 
 
 function Home() {
@@ -67,19 +67,20 @@ function Home() {
     try {
       const data = await getDocs(membersCollectionRef);
 
+
       const filteredData = data.docs.map((doc) => ({
         ...doc.data(),
         id: doc.id,
       }));
-      // console.log(filteredData)
-
-      let lastYearData = filteredData.filter(
-        (element) =>
-          parseInt(element.year.split("-")[0]) + 1 === date.getFullYear()
+      let newFilteredData = filteredData.filter(
+        (e) => parseInt(e.year.split("-")[1]) !== date.getFullYear()
       );
-      setYearList(lastYearData);
 
-      // console.log(lastYearData);
+
+
+      setYearList(newFilteredData);
+
+
     } catch (error) {
       console.error(error);
     }
@@ -89,7 +90,7 @@ function Home() {
     getMemberList();
   }, []);
 
-  const navigate = useNavigate();
+
   const data = [
     {
       image: img1,
@@ -174,38 +175,38 @@ function Home() {
       </style>
       <div className="flex flex-col justify-center items-center">
         <div className="intro flex gap-7 justify-center md:justify-evenly items-center  z-1 flex-col md:flex-row px-5 overflow-hidden">
-            <Carousel
-              responsive={responsive2}
-              showDots={false}
-              arrows={false}
-              containerClass={`w-full`}
-              itemClass={`flex justify-center items-center px-2`}
-              infinite={true}
-              className="gd-carousel2 w-2/3"
-              autoPlay={true}
-              focusOnSelect={true}
-              autoPlaySpeed={3000}
-              customTransition={'transform 300ms ease-in-out'}
-            >
-              <img
-                src={IntroGroupImage}
-                alt=""
-                // className=" md:w-[400px] md:h-[300px] "
-                className=" md:w-[884px] md:h-[400px] rounded-lg "
-              />
-              <img
-                src={IntroGroupImage}
-                alt=""
-                // className=" md:w-[400px] md:h-[300px] "
-                className=" md:w-[884px] md:h-[400px] rounded-lg "
-              />
-              <img
-                src={IntroGroupImage}
-                alt=""
-                // className=" md:w-[400px] md:h-[300px] "
-                className=" md:w-[884px] md:h-[400px] rounded-lg "
-              />
-            </Carousel>
+          <Carousel
+            responsive={responsive2}
+            showDots={false}
+            arrows={false}
+            containerClass={`w-full`}
+            itemClass={`flex justify-center items-center px-2`}
+            infinite={true}
+            className="gd-carousel2 w-2/3"
+            autoPlay={true}
+            focusOnSelect={true}
+            autoPlaySpeed={3000}
+            customTransition={'transform 300ms ease-in-out'}
+          >
+            <img
+              src={IntroGroupImage}
+              alt=""
+              // className=" md:w-[400px] md:h-[300px] "
+              className=" md:w-[884px] md:h-[400px] rounded-lg "
+            />
+            <img
+              src={IntroGroupImage}
+              alt=""
+              // className=" md:w-[400px] md:h-[300px] "
+              className=" md:w-[884px] md:h-[400px] rounded-lg "
+            />
+            <img
+              src={IntroGroupImage}
+              alt=""
+              // className=" md:w-[400px] md:h-[300px] "
+              className=" md:w-[884px] md:h-[400px] rounded-lg "
+            />
+          </Carousel>
 
           <div className="md:w-1/3 text-white flex justify-center flex-col">
             <p className="text-[3rem] md:text-[3rem] font-[800] text-center">
@@ -214,9 +215,9 @@ function Home() {
             <p className="text-[1rem] md:text-[3rem] text-center">
               Come Let's Rise
             </p>
-           
 
-            
+
+
             <Button
               className="bg-blue-600 mt-[2.5rem] max-w-[300px] mx-auto hover:text-black hover:bg-blue-500"
               px="10"
@@ -252,13 +253,13 @@ function Home() {
           />
         </div>
 
-        <div className="flex flex-column justify-center items-center  w-full bg-[#bde0fe] h-full ">
+        <div className="flex flex-column justify-center items-center  w-full bg-[#bde0fe] h-full border border-red-500">
           <h1 className="text-[20px] text-blue-900 font-normal text-center mt-5 md:text-[40px] md:font-light">OUR CORE MEMBERS</h1>
           <div className="gd-carousel-wrapper mt-5 mb-5 flex justify-center space-x-9 w-[200px] md:w-[969px]">
             <Carousel
               responsive={responsive}
               showDots={true}
-              containerClass={`w-90`}
+              containerClass={`w-95`}
               renderButtonGroupOutside={true}
               itemClass={`flex justify-center items-center px-2`}
               infinite={true}
@@ -269,27 +270,36 @@ function Home() {
               autoPlaySpeed={2000}
             >
               {yearList.map((element) => {
-                return element.members.map((e, index) => {
-                  return (
-                    <CardHome
-                      name={e.name}
-                      designation={e.designation}
-                      photo={e.photo}
-                      index={index}
-                      year={element.year}
-                    />
-                  );
-                  // <div>
+                if (element.year === "2023-24") {
+                  const cardHomeComponents = [];
 
-                  // </div>
-                });
+                  element.members.forEach((member, index) => {
+                    cardHomeComponents.push(
+                      <CardHome
+                        key={index}
+                        name={member.name}
+                        designation={member.designation}
+                        photo={member.photo}
+                        index={index}
+                        year={element.year}
+                        media={element.members[4].socialMedia}
+                      />
+                    );
+                  });
+
+                  return cardHomeComponents;
+                } else {
+                  return null;
+                }
               })}
+
+
             </Carousel>
           </div>
         </div>
       </div>
 
-      
+
     </>
   );
 }

@@ -1,85 +1,93 @@
 import React from "react";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import { GalleryGrid } from "../../components/GalleryGrid";
 
 //icons
 import { AiFillInstagram } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-
 const Wing = () => {
-    const location = useLocation()
+  const location = useLocation();
 
-    const { name, aboutExtended, coverImage, members, gallery } = location.state;
+  const { name, aboutExtended, coverImage, members, gallery } = location.state;
 
-    return (
-        <div>
-            <div className="intro-secondary flex gap-12 justify-start z-1 flex-col md:flex-row px-5 ">
-                <div className="w-full md:w-40 text-white">
-                    <p className="text-[2rem] md:text-[3rem] font-[800]">{name[0].toUpperCase() + name.slice(1)}</p>
-                </div>
-            </div>
+  return (
+    <div>
+      <div className="intro-secondary flex gap-12 justify-start z-1 flex-col md:flex-row px-5 ">
+        <div className="w-full md:w-40 text-white">
+          <p className="text-[2rem] md:text-[3rem] font-[800]">
+            {name[0].toUpperCase() + name.slice(1)}
+          </p>
+        </div>
+      </div>
 
-            {/* cover image */}
-            <div className='mt-4 md:px-60'>
-                <div
-                    className="w-full h-56 relative group overflow-hidden flex rounded-lg"
-                > <img src={coverImage} alt="img" className="absolute w-full h-full inset-0 object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                </div>
-            </div>
+      {/* cover image */}
+      <div className="mt-4 md:px-60">
+        <div className="w-full h-56 relative group overflow-hidden flex rounded-lg">
+          {" "}
+          <img
+            src={coverImage}
+            alt="img"
+            className="absolute w-full h-full inset-0 object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-in-out"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+        </div>
+      </div>
 
-            <div className="wing-body px-10 md:px-60">
-                {/* about */}
-                <div className='about py-8'>
-                    <h2 className='text-2xl md:text-3xl font-extrabold mb-4'>About</h2>
-                    <p>{aboutExtended}</p>
-                </div>
+      <div className="wing-body px-10 md:px-60">
+        {/* about */}
+        <div className="about py-8">
+          <h2 className="text-2xl md:text-3xl font-extrabold mb-4">About</h2>
+          <p>{aboutExtended}</p>
+        </div>
 
-                {/* wing members */}
-                <div className='wing-members py-8'>
-                    <h2 className='text-2xl md:text-3xl font-extrabold mb-4'>Wing Members</h2>
+        {/* wing members */}
+        <div className="wing-members py-8">
+          <h2 className="text-2xl md:text-3xl font-extrabold mb-4">
+            Wing Members
+          </h2>
 
-                    {/* ---for hierarchy --- */}
-                    {/* <div className='wing-lead flex justify-center'>
+          {/* ---for hierarchy --- */}
+          {/* <div className='wing-lead flex justify-center'>
                         <MemberCard
                             name={members[0].name}
                             designation={members[0].designation}
                             socials={members[0].socials}
                         />
                     </div> */}
-                    {/* --- hierarchy --- */}
+          {/* --- hierarchy --- */}
 
-                    <div className='flex gap-6 flex-wrap justify-center'>
-                        {members.slice(0).map((item, index) => {
-                            return (<>
-                                <MemberCard
-                                    key={index}
-                                    name={item.name}
-                                    designation={item.designation}
-                                    socials={item.socials}
-                                />
-                            </>)
-                        })}
-                    </div>
-                </div>
-
-                {/* gallery */}
-                <div className='gallery py-8'>
-                    <h2 className='text-3xl font-extrabold mb-4'>Gallery</h2>
-                    <GalleryGrid data={gallery} />
-                </div>
-            </div>
+          <div className="flex gap-6 flex-wrap justify-center">
+            {members.slice(0).map((item, index) => {
+              return (
+                <>
+                  <MemberCard
+                    key={index}
+                    name={item.name}
+                    designation={item.designation}
+                    socials={item.socials}
+                  />
+                </>
+              );
+            })}
+          </div>
         </div>
-    )
-}
 
-
+        {/* gallery */}
+        <div className="gallery py-8">
+          <h2 className="text-3xl font-extrabold mb-4">Gallery</h2>
+          <GalleryGrid data={gallery} />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const MemberCard = ({ name, designation, socials }) => {
-    return (<>
-        <style>
-            {`
+  return (
+    <>
+      <style>
+        {`
             .our-team {
             padding: 30px 0 60px;
             margin-bottom: 20px;
@@ -173,23 +181,40 @@ const MemberCard = ({ name, designation, socials }) => {
             background-color: #f7f5ec;
             }
         `}
-        </style>
+      </style>
 
-        <div className="our-team rounded-lg w-[15rem] flex-shrink-0 border-t-2 border-l-2 border-t-sky-300 border-l-sky-300 shadow-lg shadow-blue-300">
-            <div className="picture">
-                <img className="img-fluid" alt='img' src="https://picsum.photos/130/130?image=1027" />
-            </div>
-            <div className="team-content flex flex-col gap-1">
-                <h3 className="name text-2xl font-bold">{name}</h3>
-                <h4 className="title text-[#4e5052]">{designation}</h4>
-            </div>
-            <ul className="social">
-                <li ><a href={socials.insta} aria-hidden="true"><AiFillInstagram size={"1.2rem"} /></a></li>
-                <li><a href={socials.github} aria-hidden="true"><FaGithub size={"1.2rem"} /></a></li>
-                <li><a href={socials.linkedin} aria-hidden="true"><FaLinkedinIn size={"1.2rem"} /></a></li>
-            </ul>
+      <div className="our-team rounded-lg w-[15rem] flex-shrink-0 border-t-2 border-l-2 border-t-sky-300 border-l-sky-300 shadow-lg shadow-blue-300">
+        <div className="picture">
+          <img
+            className="img-fluid"
+            alt="img"
+            src="https://picsum.photos/130/130?image=1027"
+          />
         </div>
-    </>)
-}
+        <div className="team-content flex flex-col gap-1">
+          <h3 className="name text-2xl font-bold">{name}</h3>
+          <h4 className="title text-[#4e5052]">{designation}</h4>
+        </div>
+        <ul className="social">
+          <li>
+            <a href={socials.insta} aria-hidden="true">
+              <AiFillInstagram size={"1.2rem"} />
+            </a>
+          </li>
+          <li>
+            <a href={socials.github} aria-hidden="true">
+              <FaGithub size={"1.2rem"} />
+            </a>
+          </li>
+          <li>
+            <a href={socials.linkedin} aria-hidden="true">
+              <FaLinkedinIn size={"1.2rem"} />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+};
 
 export default Wing;
