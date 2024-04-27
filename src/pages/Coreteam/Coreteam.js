@@ -27,7 +27,7 @@ function Coreteam() {
       }));
 
       let newFilteredData = filteredData.filter(
-        (e) => parseInt(e.year.split("-")[0]) + 1 != d.getFullYear()
+          (e) => parseInt(e.year.split("-")[1]) + 1 !== d.getFullYear()
       );
 
       newFilteredData.sort((a, b) => {
@@ -36,7 +36,7 @@ function Coreteam() {
 
       let lastYearData = newFilteredData.filter(
         (element) =>
-          parseInt(element.year.split("-")[0]) + 2 === d.getFullYear()
+          parseInt(element.year.split("-")[0]) + 1 === d.getFullYear()
       );
       setYearList(lastYearData);
       setMemberList(newFilteredData);
