@@ -4,10 +4,41 @@ import cybernixImg from '../static/img/cybernix.jpg'
 import nirmanImg from '../static/img/civil.jpg'
 import illustroImg from '../static/img/illustro.jpg'
 
+
+//gallery image import
+//robonix
+import robonix_linetraccer from '../static/images/clubs/robonics/linetraccer.JPG'
+import robonix_mazesolver from '../static/images/clubs/robonics/mazesolver.JPG'
+import robonix_robbocarrom from '../static/images/clubs/robonics/robbocarrom.JPG'
+import robonix_robbosoccer from '../static/images/clubs/robonics/robbosoccer.JPG'
+import robonix_terrarover from '../static/images/clubs/robonics/terrarover.JPG'
+
+//eloquence
+import eloquence_despute from '../static/images/clubs/Eloquence/despute.JPG'
+import eloquence_openmic from '../static/images/clubs/Eloquence/openmic.JPG'
+import eloquence_pictopress from '../static/images/clubs/Eloquence/pictopress.JPG'
+
+//nirmaan
+import nirmaan_bridgeolare from '../static/images/clubs/nirmaan/bridgeolare.JPG'
+import nirmaan_bridgeomania from '../static/images/clubs/nirmaan/bridgeomania.JPG'
+import nirmaan_cityplanning from '../static/images/clubs/nirmaan/cityplanning.JPG'
+import nirmaan_servoolare from '../static/images/clubs/nirmaan/servoolare.JPG'
+
+//cybernix
+import cybernix_blindcoding from '../static/images/clubs/cybernix/blindcoding.JPG'
+import cybernix_encoding from '../static/images/clubs/cybernix/encoding.JPG'
+import cybernix_stacktraccer from '../static/images/clubs/cybernix/stacktraccer.JPG'
+import cybernix_webyaward from '../static/images/clubs/cybernix/webyaward.JPG'
+
+//illustro
+import illustro_bioscope from '../static/images/clubs/lensified/bioscope.jpg'
+import illustro_specrum from '../static/images/clubs/lensified/specrum.JPG'
+
 const img1 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 const img2 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 const img3 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 const img4 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
 
 export const wingData = {
     cybernix: {
@@ -53,24 +84,20 @@ export const wingData = {
 
         gallery: [
             {
-                url: img1,
-                caption: "caption"
+                url: cybernix_blindcoding,
+                caption: "blindcoding"
             },
             {
-                url: img2,
-                caption: "caption"
+                url: cybernix_encoding,
+                caption: "encoding"
             },
             {
-                url: img3,
-                caption: "caption"
+                url: cybernix_stacktraccer,
+                caption: "stacktraccer"
             },
             {
-                url: img4,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
+                url: cybernix_webyaward,
+                caption: "webyaward"
             },
         ]
     },
@@ -128,36 +155,16 @@ export const wingData = {
 
         gallery: [
             {
-                url: img1,
-                caption: "caption"
+                url: eloquence_despute,
+                caption: "despute"
             },
             {
-                url: img2,
-                caption: "caption"
+                url: eloquence_openmic,
+                caption: "openmic"
             },
             {
-                url: img3,
-                caption: "caption"
-            },
-            {
-                url: img4,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
+                url: eloquence_pictopress,
+                caption: "pictopress"
             },
         ]
     },
@@ -215,36 +222,24 @@ export const wingData = {
 
         gallery: [
             {
-                url: img1,
-                caption: "caption"
+                url: robonix_linetraccer,
+                caption: "linetraccer"
             },
             {
-                url: img2,
-                caption: "caption"
+                url: robonix_mazesolver,
+                caption: "mazesolver"
             },
             {
-                url: img3,
-                caption: "caption"
+                url: robonix_robbocarrom,
+                caption: "robbocarrom"
             },
             {
-                url: img4,
-                caption: "caption"
+                url: robonix_robbosoccer,
+                caption: "robbosoccer"
             },
             {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
+                url: robonix_terrarover,
+                caption: "terrarover"
             },
         ]
     },
@@ -313,36 +308,20 @@ export const wingData = {
 
         gallery: [
             {
-                url: img1,
-                caption: "caption"
+                url: nirmaan_bridgeolare,
+                caption: "bridgeolare"
             },
             {
-                url: img2,
-                caption: "caption"
+                url: nirmaan_bridgeomania,
+                caption: "bridgeomania"
             },
             {
-                url: img3,
-                caption: "caption"
+                url: nirmaan_cityplanning,
+                caption: "cityplanning"
             },
             {
-                url: img4,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
+                url: nirmaan_servoolare,
+                caption: "servoolare"
             },
         ]
     },
@@ -400,36 +379,12 @@ export const wingData = {
 
         gallery: [
             {
-                url: img1,
-                caption: "caption"
+                url: illustro_bioscope,
+                caption: "bioscope"
             },
             {
-                url: img2,
-                caption: "caption"
-            },
-            {
-                url: img3,
-                caption: "caption"
-            },
-            {
-                url: img4,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
-            },
-            {
-                url: img1,
-                caption: "caption"
+                url: illustro_specrum,
+                caption: "specrum"
             },
         ]
     },
