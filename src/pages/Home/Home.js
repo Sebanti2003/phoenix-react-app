@@ -236,7 +236,7 @@ function Home() {
               bg="black"
               variant="solid"
             >
-              <a href="https://avenir.phoenixnsec.in/" className="no-underline ">
+              <a href="https://www.avenirnsec.live/" className="no-underline ">
                 {" "}
                 AVENIR '24
               </a>

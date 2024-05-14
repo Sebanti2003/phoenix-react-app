@@ -2,6 +2,7 @@ import robonixImg from '../static/img/RobotEvolution.jpg'
 import eloquenseImg from '../static/img/speaking-e1513074001193.jpeg'
 import cybernixImg from '../static/img/cybernix.jpg'
 import nirmanImg from '../static/img/civil.jpg'
+import illustroImg from '../static/img/illustro.jpg'
 
 const img1 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 const img2 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -16,33 +17,36 @@ export const wingData = {
         aboutExtended: "Cybernix Club serves as a dynamic hub for coding and cybersecurity enthusiasts, offering a platform where members can engage in learning, collaboration, and innovation within the cybersecurity and technology spheres. Through workshops, seminars, real-time projects and hands-on activities, participants hone their skills and stay updated on the latest trends and developments in the ever-evolving cyber landscape. The club fosters a supportive community where members share insights, exchange ideas, and work together on projects to tackle real-world cybersecurity challenges. With a focus on fostering curiosity, creativity, and excellence, Cybernix Club empowers its members to thrive in the fast-paced and critical field of cybersecurity.",
         members: [
             {
-                name: "soham das",
+                name: "Abhinil Nath",
                 designation: "Wing Lead",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: "https://www.instagram.com/_roxxon/",
+                    facebook: null,
+                    github: "https://github.com/Abhinil-07",
+                    linkedin: "https://www.linkedin.com/in/abhinil-nath-16b2381bb/",
                 }
             },
             {
-                name: "soham das",
+                name: "Sohom Saha",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: "https://www.instagram.com/saha.sohom/",
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
+                name: "Rituraj Paul",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: "https://www.instagram.com/riturajpaul18/",
+                    facebook: null,
+                    github: "https://github.com/laughing-nerd",
+                    linkedin: "https://www.linkedin.com/in/rituraj-paul-5b0478233/",
                 }
             },
         ],
@@ -77,43 +81,47 @@ export const wingData = {
         aboutExtended: "Eloquence Club is a dynamic gathering of individuals passionate about mastering the art of communication. Through workshops, debates, and speeches, members refine their oratory skills, from persuasive rhetoric to captivating storytelling. The club fosters an environment of mutual support and constructive feedback, encouraging members to overcome stage fright and hone their confidence. With diverse topics and formats, Eloquence Club cultivates versatility in expression, empowering members to articulate ideas with clarity and impact. Whether polishing professional presentations or perfecting personal narratives, participants find a welcoming space to sharpen their eloquence and connect with like-minded communicators on a journey of continuous improvement.The Robonix Club is a student community dedicated to advancing skills and knowledge in utilizing modern technology for scientific endeavors. The club focuses on automation, artificial intelligence, and robotics. It provides a platform for students to explore these fields, turning innovative ideas into reality. The club organizes workshops, events, and technical sessions to enhance students’ understanding and practical experience in robotics, mechatronics, and related areas, fostering creativity and passion for technological advancements.",
         members: [
             {
-                name: "soham das",
+                name: "Aniket Nandi",
                 designation: "Wing Lead",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
+                name: "Divyaangan Podder",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
+                name: "Asmita Karmakar",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
+                name: "Somnath Dutta",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
         ],
@@ -160,43 +168,47 @@ export const wingData = {
         aboutExtended: "The Robonix Club is a student community dedicated to advancing skills and knowledge in utilizing modern technology for scientific endeavors. The club focuses on automation, artificial intelligence, and robotics. It provides a platform for students to explore these fields, turning innovative ideas into reality. The club organizes workshops, events, and technical sessions to enhance students’ understanding and practical experience in robotics, mechatronics, and related areas, fostering creativity and passion for technological advancements.",
         members: [
             {
-                name: "soham das",
+                name: "Krishna Kanta Pal",
                 designation: "Wing Lead",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
+                name: "Sandan Biswas",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
+                name: "Pranoy Ghorui",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
+                name: "Aritra Bera",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: "https://www.instagram.com/polo_aritra/",
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
         ],
@@ -243,43 +255,58 @@ export const wingData = {
         aboutExtended: "Nirman is a hub for civil engineering enthusiasts, fostering skill development and networking. It offers workshops and seminars to enhance practical knowledge. Members engage in projects spanning construction, infrastructure, and sustainability, honing expertise in areas like structural analysis, project management, collaborative efforts to tackle real-world challenges, encouraging innovation and problem-solving. The club cultivates a community of future engineers, promoting camaraderie and professional growth. With a focus on hands-on learning and industry insights, Nirman Wing empowers members to excel in the dynamic field of civil engineering.",
         members: [
             {
-                name: "soham das",
+                name: "Trisha Das",
                 designation: "Wing Lead",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: "https://www.instagram.com/iamtrisha_0405_?igsh=Z3ZqdXRuZW8xeWRt",
+                    facebook: "https://www.facebook.com/share/9JF4G3g4cdAzU9iw/?mibextid=qi2Omg",
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
-                designation: "Wing coordinator",
+                name: "Subhajit Pan",
+                designation: "Wing Lead",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: "https://www.instagram.com/subhajit_78242?igsh=MWpsbjY4MnAwZ2R5dQ==",
+                    facebook: "https://www.facebook.com/share/PhwEFDs4hJyJEUw6/?mibextid=qi2Omg",
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
+                name: "Sangram Ghosh",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: "https://www.instagram.com/the_silent_zephyr?igsh=MWswMmphZG1waDdoZQ==",
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
-                name: "soham das",
+                name: "Souvik Alu",
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: "https://www.instagram.com/souvikk02?igsh=MW4zMnNoNjQyaTc2OQ==",
+                    facebook: "https://www.facebook.com/share/QZvpQVLiYWcA8U6w/?mibextid=qi2Omg",
+                    github: null,
+                    linkedin: null,
+                }
+            },
+            {
+                name: "Souvik Bhowmik",
+                designation: "Wing coordinator",
+                profileImgUrl: "#",
+                socials: {
+                    insta: "https://www.instagram.com/souvik7397?igsh=MTVlNHAzNjZteDk0dw==",
+                    facebook: "https://www.facebook.com/share/MyF5vrQrVwhH3Wkz/?mibextid=qi2Omg",
+                    github: null,
+                    linkedin: null,
                 }
             },
         ],
@@ -321,7 +348,7 @@ export const wingData = {
     },
     illustro: {
         name: 'illustro',
-        coverImage: "",
+        coverImage: illustroImg,
         aboutBrief: "Illustro is the official photography wing of Phoenix - The official Tech club of Netaji Subhash Engineering College. Capturing moments, creating memories. Explore, learn, and share your passion with Illustro. Join us to unleash your creativity through the lens.",
         aboutExtended: "Illustro is a vibrant community of photography enthusiasts dedicated to capturing moments and exploring the artistry of visual storytelling. From amateur hobbyists to seasoned professionals, members share techniques, critique each other's work, and organize exhibitions to showcase their talents. Regular workshops and guest lectures by industry experts foster skill development and creativity. Through outings and photo walks, members discover new perspectives and subjects, enriching their photographic journeys. With a supportive atmosphere and a passion for imagery, Illustro serves as a hub for fostering talent and camaraderie among photographers of all levels.",
         members: [
@@ -330,9 +357,10 @@ export const wingData = {
                 designation: "Wing Lead",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
@@ -340,9 +368,10 @@ export const wingData = {
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
@@ -350,9 +379,10 @@ export const wingData = {
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
             {
@@ -360,9 +390,10 @@ export const wingData = {
                 designation: "Wing coordinator",
                 profileImgUrl: "#",
                 socials: {
-                    insta: "#",
-                    github: "#",
-                    linkedin: "#",
+                    insta: null,
+                    facebook: null,
+                    github: null,
+                    linkedin: null,
                 }
             },
         ],

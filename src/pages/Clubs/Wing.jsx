@@ -4,7 +4,7 @@ import { GalleryGrid } from "../../components/GalleryGrid";
 
 //icons
 import { AiFillInstagram } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaFacebook } from "react-icons/fa";
 
 const Wing = () => {
   const location = useLocation();
@@ -84,6 +84,7 @@ const Wing = () => {
 };
 
 const MemberCard = ({ name, designation, socials }) => {
+  console.log(socials);
   return (
     <>
       <style>
@@ -196,21 +197,26 @@ const MemberCard = ({ name, designation, socials }) => {
           <h4 className="title text-[#4e5052]">{designation}</h4>
         </div>
         <ul className="social">
-          <li>
+          {socials?.insta && <li>
             <a href={socials.insta} aria-hidden="true">
               <AiFillInstagram size={"1.2rem"} />
             </a>
-          </li>
-          <li>
+          </li>}
+          {socials?.facebook && <li>
+            <a href={socials.facebook} aria-hidden="true">
+              <FaFacebook size={"1.2rem"} />
+            </a>
+          </li>}
+          {socials?.github && <li>
             <a href={socials.github} aria-hidden="true">
               <FaGithub size={"1.2rem"} />
             </a>
-          </li>
-          <li>
+          </li>}
+          {socials?.linkedin && <li>
             <a href={socials.linkedin} aria-hidden="true">
               <FaLinkedinIn size={"1.2rem"} />
             </a>
-          </li>
+          </li>}
         </ul>
       </div>
     </>
