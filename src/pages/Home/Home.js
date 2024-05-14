@@ -282,7 +282,7 @@ function Home() {
                         photo={member.photo}
                         index={index}
                         year={element.year}
-                        media={element.members[4].socialMedia}
+                        media={member.socialMedia || {}}
                       />
                     );
                   });
