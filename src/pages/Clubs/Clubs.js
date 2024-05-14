@@ -3,6 +3,7 @@ import img1 from '../../static/img/RobotEvolution.jpg'
 import img2 from '../../static/img/speaking-e1513074001193.jpeg'
 import img3 from '../../static/img/cybernix.jpg'
 import img4 from '../../static/img/civil.jpg'
+import img5 from '../../static/img/illustro.jpg'
 import ZigBox from '../../components/ZigBox'
 import { wingData } from '../../data/wingData'
 import { useNavigate } from 'react-router-dom'
@@ -49,7 +50,7 @@ const data = [
     isCLub: true
   },
   {
-    image: "",
+    image: img5,
     title: 'Illustro',
     description: 'Illustro is the official photography wing of Phoenix - The official Tech club of Netaji Subhash Engineering College. Capturing moments, creating memories. Explore, learn, and share your passion with Illustro. Join us to unleash your creativity through the lens.',
     extraButton: {
