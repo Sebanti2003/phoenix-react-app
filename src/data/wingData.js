@@ -50,7 +50,7 @@ export const wingData = {
             {
                 name: "Abhinil Nath",
                 designation: "Wing Lead",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/web-team%2FAbhinil-Nath.jpg?alt=media&token=85dc7427-1334-4ee0-86d5-d26994a7c653",
                 socials: {
                     insta: "https://www.instagram.com/_roxxon/",
                     facebook: null,
@@ -61,7 +61,7 @@ export const wingData = {
             {
                 name: "Sohom Saha",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Fcybernix%2FWhatsApp%20Image%202024-05-14%20at%2023.52.50_c50e84f6.jpg?alt=media&token=798a1345-dc66-400b-a7c0-ec0af71d9aa9",
                 socials: {
                     insta: "https://www.instagram.com/saha.sohom/",
                     facebook: null,
@@ -72,7 +72,7 @@ export const wingData = {
             {
                 name: "Rituraj Paul",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Fcybernix%2FWhatsApp%20Image%202024-05-14%20at%2023.52.50_7f3fec3d.jpg?alt=media&token=e009ffb6-4af1-4480-a8ca-c4ea26aad7a3",
                 socials: {
                     insta: "https://www.instagram.com/riturajpaul18/",
                     facebook: null,
@@ -110,7 +110,7 @@ export const wingData = {
             {
                 name: "Aniket Nandi",
                 designation: "Wing Lead",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Feloquense%2FWhatsApp%20Image%202024-05-14%20at%2023.49.45_423561fe.jpg?alt=media&token=43c99f84-9e20-4e4b-a064-147e1cf1ad52",
                 socials: {
                     insta: null,
                     facebook: null,
@@ -121,7 +121,7 @@ export const wingData = {
             {
                 name: "Divyaangan Podder",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Feloquense%2FDivyaanganaPodder.png?alt=media&token=71371737-b40f-4dff-b945-1d65ade1993c",
                 socials: {
                     insta: null,
                     facebook: null,
@@ -132,7 +132,7 @@ export const wingData = {
             {
                 name: "Asmita Karmakar",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Feloquense%2FWhatsApp%20Image%202024-05-14%20at%2023.50.33_e18bface.jpg?alt=media&token=019fe37e-c5fb-4bd8-b947-08e5cf376da1",
                 socials: {
                     insta: null,
                     facebook: null,
@@ -143,7 +143,7 @@ export const wingData = {
             {
                 name: "Somnath Dutta",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Feloquense%2FWhatsApp%20Image%202024-05-14%20at%2023.51.40_76f42979.jpg?alt=media&token=3d41bfd1-4ce3-4d22-89c3-8adb053678c4",
                 socials: {
                     insta: null,
                     facebook: null,
@@ -177,7 +177,7 @@ export const wingData = {
             {
                 name: "Krishna Kanta Pal",
                 designation: "Wing Lead",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Frobonix%2FWhatsApp%20Image%202024-05-14%20at%2023.47.52_805144f0.jpg?alt=media&token=9c58a5b5-c5d8-4c3d-b0b8-51ba1613decd",
                 socials: {
                     insta: null,
                     facebook: null,
@@ -188,7 +188,7 @@ export const wingData = {
             {
                 name: "Sandan Biswas",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Frobonix%2FWhatsApp%20Image%202024-05-14%20at%2023.47.15_2bf6ca4b.jpg?alt=media&token=dc6a63e6-11e2-4449-ae34-8b589ba2ac89",
                 socials: {
                     insta: null,
                     facebook: null,
@@ -199,7 +199,7 @@ export const wingData = {
             {
                 name: "Pranoy Ghorui",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Frobonix%2FWhatsApp%20Image%202024-05-14%20at%2023.48.22_0fea716c.jpg?alt=media&token=2be79c47-8327-4f02-b0ea-8f57bd239c28",
                 socials: {
                     insta: null,
                     facebook: null,
@@ -210,7 +210,7 @@ export const wingData = {
             {
                 name: "Aritra Bera",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Frobonix%2FWhatsApp%20Image%202024-05-14%20at%2023.48.50_75693a96.jpg?alt=media&token=90bc241a-c531-40db-b4d5-9dcb17f0906c",
                 socials: {
                     insta: "https://www.instagram.com/polo_aritra/",
                     facebook: null,
@@ -252,7 +252,7 @@ export const wingData = {
             {
                 name: "Trisha Das",
                 designation: "Wing Lead",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Fnirman%2FWhatsApp%20Image%202024-05-14%20at%2023.45.11_87e17bd4.jpg?alt=media&token=ccb69ed0-b449-4c17-996e-67a06ea2b60e",
                 socials: {
                     insta: "https://www.instagram.com/iamtrisha_0405_?igsh=Z3ZqdXRuZW8xeWRt",
                     facebook: "https://www.facebook.com/share/9JF4G3g4cdAzU9iw/?mibextid=qi2Omg",
@@ -262,8 +262,8 @@ export const wingData = {
             },
             {
                 name: "Subhajit Pan",
-                designation: "Wing Lead",
-                profileImgUrl: "#",
+                designation: "Wing coordinator",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Fnirman%2FWhatsApp%20Image%202024-05-14%20at%2023.45.40_41113122.jpg?alt=media&token=081851cb-f279-43db-a522-b2be44af8fbd",
                 socials: {
                     insta: "https://www.instagram.com/subhajit_78242?igsh=MWpsbjY4MnAwZ2R5dQ==",
                     facebook: "https://www.facebook.com/share/PhwEFDs4hJyJEUw6/?mibextid=qi2Omg",
@@ -274,7 +274,7 @@ export const wingData = {
             {
                 name: "Sangram Ghosh",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Fnirman%2FWhatsApp%20Image%202024-05-14%20at%2023.44.16_715d6715.jpg?alt=media&token=191580af-74b7-4f93-a87e-eff11112488b",
                 socials: {
                     insta: "https://www.instagram.com/the_silent_zephyr?igsh=MWswMmphZG1waDdoZQ==",
                     facebook: null,
@@ -285,7 +285,7 @@ export const wingData = {
             {
                 name: "Souvik Alu",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Fnirman%2FWhatsApp%20Image%202024-05-14%20at%2023.45.59_51f813c6.jpg?alt=media&token=e3c1f6f8-79b1-4e71-8a05-487a611626d3",
                 socials: {
                     insta: "https://www.instagram.com/souvikk02?igsh=MW4zMnNoNjQyaTc2OQ==",
                     facebook: "https://www.facebook.com/share/QZvpQVLiYWcA8U6w/?mibextid=qi2Omg",
@@ -296,7 +296,7 @@ export const wingData = {
             {
                 name: "Souvik Bhowmik",
                 designation: "Wing coordinator",
-                profileImgUrl: "#",
+                profileImgUrl: "https://firebasestorage.googleapis.com/v0/b/phoenix-c88b9.appspot.com/o/Team%20members%2Fnirman%2FWhatsApp%20Image%202024-05-14%20at%2023.46.14_4725546a.jpg?alt=media&token=636e3318-3acf-4063-a64b-1cfdf67206a9",
                 socials: {
                     insta: "https://www.instagram.com/souvik7397?igsh=MTVlNHAzNjZteDk0dw==",
                     facebook: "https://www.facebook.com/share/MyF5vrQrVwhH3Wkz/?mibextid=qi2Omg",
