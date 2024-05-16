@@ -1,11 +1,11 @@
+//cover images
 import robonixImg from '../static/img/RobotEvolution.jpg'
 import eloquenseImg from '../static/img/speaking-e1513074001193.jpeg'
 import cybernixImg from '../static/img/cybernix.jpg'
 import nirmanImg from '../static/img/civil.jpg'
 import illustroImg from '../static/img/illustro.jpg'
 
-
-//gallery image import
+//gallery image imports
 //robonix
 import robonix_linetraccer from '../static/images/clubs/robonics/linetraccer.JPG'
 import robonix_mazesolver from '../static/images/clubs/robonics/mazesolver.JPG'
@@ -33,12 +33,6 @@ import cybernix_webyaward from '../static/images/clubs/cybernix/webyaward.JPG'
 //illustro
 import illustro_bioscope from '../static/images/clubs/lensified/bioscope.jpg'
 import illustro_specrum from '../static/images/clubs/lensified/specrum.JPG'
-
-const img1 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-const img2 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-const img3 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-const img4 = "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-
 
 export const wingData = {
     cybernix: {

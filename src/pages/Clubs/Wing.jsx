@@ -64,6 +64,7 @@ const Wing = () => {
                   <MemberCard
                     key={index}
                     name={item.name}
+                    profileImgUrl={item.profileImgUrl}
                     designation={item.designation}
                     socials={item.socials}
                   />
@@ -83,8 +84,8 @@ const Wing = () => {
   );
 };
 
-const MemberCard = ({ name, designation, socials }) => {
-  console.log(socials);
+const MemberCard = ({ name, designation, profileImgUrl, socials }) => {
+  console.log(profileImgUrl);
   return (
     <>
       <style>
@@ -139,8 +140,9 @@ const MemberCard = ({ name, designation, socials }) => {
             }
 
             .our-team .picture img {
+            object-fit: cover;
             width: 100%;
-            height: auto;
+            height: 100%;
             border-radius: 50%;
             transform: scale(1);
             transition: all 0.9s ease 0s;
@@ -189,7 +191,7 @@ const MemberCard = ({ name, designation, socials }) => {
           <img
             className="img-fluid"
             alt="img"
-            src="https://picsum.photos/130/130?image=1027"
+            src={profileImgUrl}
           />
         </div>
         <div className="team-content flex flex-col gap-1">
