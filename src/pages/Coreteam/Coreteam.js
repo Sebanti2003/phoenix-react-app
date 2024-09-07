@@ -7,7 +7,7 @@ function Coreteam() {
   const [memberList, setMemberList] = useState([]);
   const [yearList, setYearList] = useState([]);
   const membersCollectionRef = collection(db, "core-team");
-  const [activeButton, setActiveButton] = useState("");
+  const [activeButton, setActiveButton] = useState("2024-25");
 
   let d = new Date();
 
@@ -16,38 +16,45 @@ function Coreteam() {
     let updatedData = memberList.filter((e) => e.id === id);
     setYearList(updatedData);
   };
-
   const getMemberList = async () => {
     try {
       const data = await getDocs(membersCollectionRef);
-
+  
       const filteredData = data.docs.map((doc) => ({
         ...doc.data(),
         id: doc.id,
       }));
-
-      let newFilteredData = filteredData.filter(
-          (e) => parseInt(e.year.split("-")[1]) + 1 !== d.getFullYear()
-      );
-
-      newFilteredData.sort((a, b) => {
+  
+      // Sort by the starting year (before the dash)
+      filteredData.sort((a, b) => {
         return parseInt(a.year.split("-")[0]) - parseInt(b.year.split("-")[0]);
       });
-
-      let lastYearData = newFilteredData.filter(
-        (element) =>
-          parseInt(element.year.split("-")[0]) + 1 === d.getFullYear()
+  
+      // Filter data for the year 2024-25 as default
+      let defaultYearData = filteredData.filter(
+        (element) => element.year === "2024-25"
       );
-      setYearList(lastYearData);
-      setMemberList(newFilteredData);
-      setActiveButton(lastYearData[0].year);
-
-
+  
+      // If there is no data for 2024-25, fallback to the last year
+      if (defaultYearData.length === 0) {
+        defaultYearData = filteredData.filter(
+          (element) =>
+            parseInt(element.year.split("-")[0]) + 1 === d.getFullYear()
+        );
+      }
+  
+      setYearList(defaultYearData);
+      setMemberList(filteredData);
+  
+      // Set the default active button to 2024-25
+      setActiveButton("2024-25");
+  
+      console.log(defaultYearData);
     } catch (error) {
       console.error(error);
     }
   };
-
+  
   useEffect(() => {
     getMemberList();
   }, []);
@@ -62,7 +69,7 @@ function Coreteam() {
         </div>
 
         <div className="flex flex-col justify-center items-center mb-5">
-          <div className="flex flex-row space-x-4">
+          <div className="flex w-full flex-wrap justify-center gap-2">
             {memberList.map((element) => {
               return (
                 <button
